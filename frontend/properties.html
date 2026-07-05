@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - CrownStone Real Estate</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🏠 CrownStone Real Estate</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="nav-auth">
+                    <a href="login.html">Login</a> | <a href="register.html">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 30px;">
+        <h1>Our Properties</h1>
+
+        <!-- Filters -->
+        <div class="filters">
+            <div class="filter-group">
+                <label>Location:</label>
+                <input type="text" id="filter-location" placeholder="Search location...">
+            </div>
+            <div class="filter-group">
+                <label>Property Type:</label>
+                <select id="filter-type">
+                    <option value="">All Types</option>
+                    <option value="House">House</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Condo">Condo</option>
+                    <option value="Townhouse">Townhouse</option>
+                    <option value="Land">Land</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Min Price:</label>
+                <input type="number" id="filter-min-price" placeholder="Min price">
+            </div>
+            <div class="filter-group">
+                <label>Max Price:</label>
+                <input type="number" id="filter-max-price" placeholder="Max price">
+            </div>
+            <div class="filter-group">
+                <label>Bedrooms:</label>
+                <select id="filter-bedrooms">
+                    <option value="0">Any</option>
+                    <option value="1">1+</option>
+                    <option value="2">2+</option>
+                    <option value="3">3+</option>
+                    <option value="4">4+</option>
+                    <option value="5">5+</option>
+                </select>
+            </div>
+            <button id="filter-btn" class="btn-primary">Filter</button>
+        </div>
+
+        <!-- Properties Grid -->
+        <div id="properties-list" class="properties-grid"></div>
+
+        <!-- Pagination -->
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 CrownStone Real Estate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/properties.js"></script>
+</body>
+</html>
